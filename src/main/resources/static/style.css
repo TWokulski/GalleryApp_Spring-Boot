@@ -1,0 +1,92 @@
+html{
+	height: 100%;
+}
+
+body{
+	font-family:arial;
+	font-size:15px;
+	line-height: 1.6em;
+	background:#f4f4f4;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  padding: 10px;
+  transition: transform .2s; /* Animation */
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+  transform: scale(1.5);
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+.zoom {
+  padding: 50px;
+  background-color: green;
+  transition: transform .2s; /* Animation */
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+h3 {
+	text-align: left;
+	padding-left: 10px;
+	padding-top: 10px;
+  }
+
+.top{
+
+    font-size: 25pt;
+    padding: 1% 0px 1% 0px;
+    margin: 6% auto;
+	position: relative;
+	text-align:center;
+}
+
+.container{
+
+    background: #fff;
+    position: relative;
+    border-radius : 10px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.1),
+	inset 0 0 0 rgba(0,0,0,0.1);
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+
+
+button {
+	background-color: white;
+	color: black;
+	border: 2px solid #e7e7e7;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 10px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	position: relative;
+	bottom: 10px;
+
+  }
+
+button:hover {background-color: #e7e7e7;}
+
+.images {
+    position: relative;
+}

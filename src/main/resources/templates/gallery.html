@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+    <div class ="container1">
+
+        <header>
+            <div class="top">
+                <h2>Galeria</h2>
+            </div>
+        </header>
+        <button id="submit" onclick="window.location.href='/'">Powrót</button>
+        <div class ="images">
+            <div class="gallery" th:each = "image : ${imgUrls}">
+                <a class="fancybox" th:href = ${image.getUrlAddress()}>
+                    <img th:src = ${image.getUrlAddress()} alt="" width="600" height="400">
+                </a>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

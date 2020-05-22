@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload your photo!</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+<h1>Upload your file to cloud!</h1>
+<hr/>
+<h4>Upload Single File:</h4>
+<form method="POST" th:action="@{/uploadFile}" enctype="multipart/form-data">
+    <input type="file" name="file"/> <br/><br/>
+    <button type="submit">Submit</button>
+</form>
+    <button id="submit" onclick="window.location.href='/'">Powrót</button>
+<hr/>
+<div th:if="${message}">
+    <h2 th:text="${message}"/>
+</div>
+
+</body>
+</html>
